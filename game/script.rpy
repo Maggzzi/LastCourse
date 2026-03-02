@@ -8,6 +8,7 @@ define j = Character("Han Jaehyun", color="#651102")
 # The game starts here.
 label start:
 
+    #Party-intro script
     scene black
     play music "piano.ogg"
     "The Charity Ball, hosted every year by the ever so famous Han Jaehyun."
@@ -27,12 +28,22 @@ label start:
     e "Hello, my name's Eun-gyeol, it's nice to meet each and everyone of you here."
     j "He's been known for his famous celebrity-reputation-killing articles, i doubt that any of you folks haven't read his paper on idol xxx's scandal, revolving..."
     "Ah yes, sorry, i'm not *just* an ordinary journalist, in fact, i've written many jaw-dropping scandals involving numerous bigshots."
-    "I just had to target a few people in my articles on Han Jaehyun's behalf, and i got the invitation in a flash."
+    "I just had to target a few people in my articles on Han Jaehyun's behalf and i got the invitation in a flash."
     "But, well.. needless to say."
     stop music
-    "He's a big idiot."
+    "He's an idiot, a big one at that"
+    play music "eerie.wav"
     #scene #slightly changed art of where jaehyun is hugging eungyeol, where eungyeol looks kind of sinister
-    "As i said earlier, i didn't come here to make friends, i'm more focused on who the next target of my paper is gonna be, and why not go for the biggest fish in the pond?" 
+    "As i said earlier, i didn't come here to make friends, i'm more focused on who the next target of my paper is gonna be, and why not go for the biggest fish in the pond?"
+    "The Han Group. One of Korea's largest family-owned conglomerates"
+    "Han-Jaehyun — the chairman of Han Cultural Holdings. Media, Idols, Film studios and Elite private events, He's got full control over them."
+    "That kind of power doesn't come clean."
+    "Men like him think money makes them untouchable."
+    "Han Jaehyun... let's see how untouchable you really are."
+
+
+    ""
+
 
     
 
