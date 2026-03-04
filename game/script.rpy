@@ -41,8 +41,11 @@ label start:
     "Men like him think money makes them untouchable."
     "Han Jaehyun... let's see how untouchable you really are."
 
+    "Objective: gather information about Han-Jaehyun, photos will be made with your camera, disguised as a pen."
+    e "I should mingle with the other guests for now, i'll take notes to keep my findings in check."
+    #if NOT enough notes/evidence, fail the mission= shortest ending
+    #if enough notes/evidence, 
 
-    ""
 
 
     
