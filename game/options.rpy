@@ -14,6 +14,9 @@
 
 define config.name = _("LastCourse")
 
+define config.screen_width = 2560
+define config.screen_height = 1440
+
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

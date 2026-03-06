@@ -40,28 +40,49 @@ label start:
     "That kind of power doesn't come clean."
     "Men like him think money makes them untouchable."
     "Han Jaehyun... let's see how untouchable you really are."
-
+     
+    stop music
     "Objective: gather information about Han-Jaehyun, photos will be made with your camera, disguised as a pen."
     e "I should mingle with the other guests for now, i'll take notes to keep my findings in check."
     #if NOT enough notes/evidence, fail the mission= shortest ending
     #if enough notes/evidence, 
-
-
-
     
+    screen party_map():
+        add "images/bg/lounge_bg.png"
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+        imagebutton:
+            idle "images/characters/lounge_guests.png"
+            hover "images/characters/lounge_guests_fade.png"
+            xalign 0.5
+            yalign 0.5
 
-    show eileen happy
+            at Transform(zoom=0.8)
+            action Jump("talk_guests")  
+    
+label louge_scene:
+    scene lounge_bg
+    "You look around the main lounge room, seeing allot of people conversing with eachother."
+    "You decide to walk up to them, your here to scoop some juicy secrets after all!"
+    call screen party_map
 
-    # These display lines of dialogue.
+    return
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+label talk_guests:
+    show image "images/characters/lounge_guests.png"
+    "You approach the group of guests, they seem like the relatives of Jaehyun!"
+    "Hey, you must be Eun-Gyeol, right? The *infamous* journalist, right?"
+    "Heh, yeah- that's me, and you all are?"
+    "We're Jaehyuns cousins, some here are brother and sister of his."
+    "Yeah, we recognised you immediately."
+    "Your articles have been quite remarkable, you know."
+    "Sharp writing. Not many journalists dare to dig as deep as you do."
+    "Thanks, i appreciate that! I'm just trying to do my job."
+    "Stil, it must take courage. Jaehyun always liked people with ambition."
+    "Speaking of Jaehyun.. doesn't he seem different lately?"
+    "Different, that's putting it lightly."
+    "When he was younger he was so quiet, always hiding behind books."
+    "Now look at him, Hosting grand dinners, inviting half the city."
+    "Succes changes people."
+    "Or perhaps... it reveals who they truly are."
+    
     return
