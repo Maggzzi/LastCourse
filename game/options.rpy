@@ -14,8 +14,8 @@
 
 define config.name = _("LastCourse")
 
-define config.screen_width = 2560
-define config.screen_height = 1440
+define config.screen_width = 1920
+define config.screen_height = 1080
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
